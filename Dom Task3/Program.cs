@@ -7,12 +7,13 @@ void FillArray(int [] array)
     }
 } 
 Console.WriteLine("Введите координаты первой точки: ");
-int [] DotOne = new int[2];
+int [] DotOne = new int[3];
 FillArray(DotOne);
 Console.WriteLine("Введите координаты второй точки: ");
-int [] DotTwo = new int[2];
+int [] DotTwo = new int[3];
 FillArray(DotTwo);
-int KatetX = DotTwo[0] - DotOne[0];
-int KatetY = DotTwo[1] - DotOne[1];
-double result = Math.Sqrt(Math.Pow(KatetX, 2) + Math.Pow(KatetY, 2));
+int SideX = DotTwo[0] - DotOne[0];
+int SideY = DotTwo[1] - DotOne[1];
+int SideZ = DotTwo[2] - DotOne[2];
+double result = Math.Sqrt(Math.Pow(SideX, 2) + Math.Pow(SideY, 2) + Math.Pow(SideZ, 2));
 Console.WriteLine($"Расстояние между точками = {Math.Round(result, 2)}");

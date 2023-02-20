@@ -13,6 +13,6 @@ for (int i = 0; i <= length/2; i++)
        count+=1;   
 }
 if (count==(length/2)+1)
-Console.WriteLine("da");
+Console.WriteLine("Палиндром");
 else
-Console.WriteLine("net");
+Console.WriteLine("Не палиндром");
