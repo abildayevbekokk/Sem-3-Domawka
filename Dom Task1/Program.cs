@@ -2,10 +2,10 @@
 string Number = Console.ReadLine();
 int length = Number.Length;
 long number = Convert.ToInt64(Number);
-int [] Massive = new int[length];
+long [] Massive = new long[length];
 int count=0;
 for (int i = 0; i < length; i++)
-    Massive[i] = (int)(number % Math.Pow(10, length - i))  / (int)Math.Pow(10, length - 1 - i);
+    Massive[i] = (long)(number % Math.Pow(10, length - i))  / (long)Math.Pow(10, length - 1 - i);
         
 for (int i = 0; i <= length/2; i++)
 {   
